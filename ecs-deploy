@@ -59,8 +59,9 @@ Optional arguments:
     --force-new-deployment       Force a new deployment of the service. Default is false.
     --use-latest-task-def   Will use the most recently created task definition as it's base, rather than the last used.
     --skip-deployments-check     Skip deployments check for services that take too long to drain old tasks
-    --private-registry           Adds executionRoleArn from previous task definition if private repository authentication is required.
     --run-task                   Run created task now. If you set this, service-name are not needed.
+    --private-registry           Adds executionRoleArn from previous task definition if private Docker repository authentication is required.
+    --container-variable         Adds a NAME=VALUE environment bariable to the new task definition. May be called multiple times.
     -v | --verbose               Verbose output
          --version               Display the version
 
